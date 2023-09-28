@@ -4,6 +4,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import ApodContainer from "./components/ApodContainer";
 
+
 function App() {
   const [apodData, setApodData] = useState();
   const [datePicker, setDatePicker] = useState(
@@ -15,7 +16,7 @@ function App() {
     axios
       .get("https://api.nasa.gov/planetary/apod", {
         params: {
-          api_key: "DEMO_KEY",
+          api_key: "vt428WsT9pXe69IWx9XRxMtJcxoumfKUSA3db7Xx",
           date: datePicker,
         },
       })
